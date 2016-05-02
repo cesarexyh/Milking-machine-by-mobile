@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/cn/org/octopus/wheelview/ChooseActivity.java=UTF-8
+encoding//src/cn/org/octopus/wheelview/MyView.java=UTF-8
+encoding//src/cn/org/octopus/wheelview/widget/ArrayWheelAdapter.java=UTF-8
+encoding//src/cn/org/octopus/wheelview/widget/NumericWheelAdapter.java=UTF-8
+encoding//src/cn/org/octopus/wheelview/widget/OnWheelChangedListener.java=UTF-8
+encoding//src/cn/org/octopus/wheelview/widget/OnWheelScrollListener.java=UTF-8
+encoding//src/cn/org/octopus/wheelview/widget/WheelAdapter.java=UTF-8
+encoding//src/cn/org/octopus/wheelview/widget/WheelView.java=UTF-8
+encoding//src/com/example/learnprogect/MainActivity.java=UTF-8
+encoding//src/com/example/learnprogect/socket/TcpSocket.java=UTF-8
+encoding/<project>=UTF-8

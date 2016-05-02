@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/title" >
+
+        <TextView
+            android:id="@+id/tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/lightback"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/line"
+            ></LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            <ImageView
+                android:id="@+id/lightIm"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/lightIm"
+                android:gravity="center"
+                android:text="灯"
+                android:textColor="#696969" />
+
+            <Button
+                android:id="@+id/ledSwitch"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/off" />
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/electricback" >
+
+        <RelativeLayout
+            android:id="@+id/elelicLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/elelicLine"
+            android:background="@drawable/electric" >
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/leftButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@id/stopButton"
+                android:layout_toLeftOf="@id/stopButton"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/rightButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@id/stopButton"
+                android:layout_toRightOf="@id/stopButton"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/upButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_above="@id/stopButton"
+                android:layout_toRightOf="@id/leftButton"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/downButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/stopButton"
+                android:layout_toRightOf="@id/leftButton"
+                android:background="@null" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/choose_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="奶粉设置" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/milk_drink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="一键冲奶" />
+
+    </LinearLayout>
+
+</LinearLayout>
